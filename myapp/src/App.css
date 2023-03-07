@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #1df075;
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.but{
+  font-size: 20px;
+  background-color: rgba(19, 236, 19, 0.842);
+  margin-top: 20px;
+}
+
+
+
