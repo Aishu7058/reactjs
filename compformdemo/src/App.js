@@ -5,7 +5,7 @@ import {useState} from 'react';
 import Calculator from './Calculator';
 import Welcome from './Welcome';
 import Probdemo from './Probdemo';
-import ProbObj from './ProbObj';
+import PropsObj from './PropsObj';
 
 // function InternalComp(){
 //   return(
@@ -47,6 +47,17 @@ function App() {
     rno:10,
     nm:"abc"
   }
+
+  const [studArr,setStudarr] = useState([
+    {
+      name: "AY",
+      roll: 76
+    },
+    {
+      name: "AB",
+      roll: 10
+    }
+  ])
   return (
     <div className="App">
       <header className="App-header">
@@ -69,8 +80,11 @@ function App() {
         <h2>List of colors: </h2>
         <Probdemo demo="welcome" d={colors}/> */}
 
-        <ProbObj o={stud}/>
+        {/* Array of object 7/3/2023 & 8/3/2023
+        <PropsObj o={studArr}/> */}
 
+        {/* Filter (search value) 8/3/2023 & 9/3/2023 */}
+        <PropsObj o={studArr}/>
       </header>
     </div>
   );

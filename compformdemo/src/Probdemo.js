@@ -12,6 +12,7 @@ function Probdemo(props){
     const addData=()=>{
         names.push(name)
         setNames(names)
+        setName('')
     }
     return(
         // to display colors
